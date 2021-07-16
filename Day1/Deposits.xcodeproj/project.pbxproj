@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3963ED79269EC1DE005BC7DE /* DepositsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963ED78269EC1DE005BC7DE /* DepositsApp.swift */; };
+		3963ED7B269EC1DE005BC7DE /* DepositsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963ED7A269EC1DE005BC7DE /* DepositsListView.swift */; };
+		3963ED7D269EC1DF005BC7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3963ED7C269EC1DF005BC7DE /* Assets.xcassets */; };
+		3963ED80269EC1DF005BC7DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3963ED7F269EC1DF005BC7DE /* Preview Assets.xcassets */; };
+		3963ED8B269EC1E0005BC7DE /* DepositsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963ED8A269EC1E0005BC7DE /* DepositsTests.swift */; };
+		3963ED96269EC1E0005BC7DE /* DepositsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963ED95269EC1E0005BC7DE /* DepositsUITests.swift */; };
+		3963EDA4269EC268005BC7DE /* DepositsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963EDA3269EC268005BC7DE /* DepositsService.swift */; };
+		3963EDA6269EC28A005BC7DE /* DepositModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963EDA5269EC28A005BC7DE /* DepositModel.swift */; };
+		3963EDA8269EC5BE005BC7DE /* MockDepositList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963EDA7269EC5BE005BC7DE /* MockDepositList.swift */; };
+		3963EDAA269EC6CB005BC7DE /* DepositsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963EDA9269EC6CB005BC7DE /* DepositsListViewModel.swift */; };
+		3963EDAC269EC90B005BC7DE /* DepositError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963EDAB269EC90B005BC7DE /* DepositError.swift */; };
+		3963EDAE269EF5B5005BC7DE /* ScanChequeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963EDAD269EF5B5005BC7DE /* ScanChequeView.swift */; };
+		3963EDB0269EF7A1005BC7DE /* ScanChequeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963EDAF269EF7A1005BC7DE /* ScanChequeViewModel.swift */; };
+		3963EDB6269F0D1C005BC7DE /* Screen Recording 2021-07-14 at 5.45.37 PM.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3963EDB5269F0D1C005BC7DE /* Screen Recording 2021-07-14 at 5.45.37 PM.mov */; };
+		3963EDB8269F0D93005BC7DE /* DepositsListTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963EDB7269F0D93005BC7DE /* DepositsListTile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3963ED87269EC1E0005BC7DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3963ED6D269EC1DE005BC7DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3963ED74269EC1DE005BC7DE;
+			remoteInfo = Deposits;
+		};
+		3963ED92269EC1E0005BC7DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3963ED6D269EC1DE005BC7DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3963ED74269EC1DE005BC7DE;
+			remoteInfo = Deposits;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3963ED75269EC1DE005BC7DE /* Deposits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deposits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3963ED78269EC1DE005BC7DE /* DepositsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsApp.swift; sourceTree = "<group>"; };
+		3963ED7A269EC1DE005BC7DE /* DepositsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsListView.swift; sourceTree = "<group>"; };
+		3963ED7C269EC1DF005BC7DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3963ED7F269EC1DF005BC7DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3963ED81269EC1DF005BC7DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3963ED86269EC1E0005BC7DE /* DepositsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepositsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3963ED8A269EC1E0005BC7DE /* DepositsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsTests.swift; sourceTree = "<group>"; };
+		3963ED8C269EC1E0005BC7DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3963ED91269EC1E0005BC7DE /* DepositsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepositsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3963ED95269EC1E0005BC7DE /* DepositsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsUITests.swift; sourceTree = "<group>"; };
+		3963ED97269EC1E0005BC7DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3963EDA3269EC268005BC7DE /* DepositsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsService.swift; sourceTree = "<group>"; };
+		3963EDA5269EC28A005BC7DE /* DepositModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositModel.swift; sourceTree = "<group>"; };
+		3963EDA7269EC5BE005BC7DE /* MockDepositList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDepositList.swift; sourceTree = "<group>"; };
+		3963EDA9269EC6CB005BC7DE /* DepositsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsListViewModel.swift; sourceTree = "<group>"; };
+		3963EDAB269EC90B005BC7DE /* DepositError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositError.swift; sourceTree = "<group>"; };
+		3963EDAD269EF5B5005BC7DE /* ScanChequeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanChequeView.swift; sourceTree = "<group>"; };
+		3963EDAF269EF7A1005BC7DE /* ScanChequeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanChequeViewModel.swift; sourceTree = "<group>"; };
+		3963EDB5269F0D1C005BC7DE /* Screen Recording 2021-07-14 at 5.45.37 PM.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Screen Recording 2021-07-14 at 5.45.37 PM.mov"; sourceTree = "<group>"; };
+		3963EDB7269F0D93005BC7DE /* DepositsListTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsListTile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3963ED72269EC1DE005BC7DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3963ED83269EC1E0005BC7DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3963ED8E269EC1E0005BC7DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3963ED6C269EC1DE005BC7DE = {
+			isa = PBXGroup;
+			children = (
+				3963ED77269EC1DE005BC7DE /* Deposits */,
+				3963ED89269EC1E0005BC7DE /* DepositsTests */,
+				3963ED94269EC1E0005BC7DE /* DepositsUITests */,
+				3963ED76269EC1DE005BC7DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3963ED76269EC1DE005BC7DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3963ED75269EC1DE005BC7DE /* Deposits.app */,
+				3963ED86269EC1E0005BC7DE /* DepositsTests.xctest */,
+				3963ED91269EC1E0005BC7DE /* DepositsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3963ED77269EC1DE005BC7DE /* Deposits */ = {
+			isa = PBXGroup;
+			children = (
+				3963EDB5269F0D1C005BC7DE /* Screen Recording 2021-07-14 at 5.45.37 PM.mov */,
+				3963ED78269EC1DE005BC7DE /* DepositsApp.swift */,
+				3963EDB4269EFEDD005BC7DE /* Services */,
+				3963EDB3269EFECF005BC7DE /* Model */,
+				3963EDB2269EFEBE005BC7DE /* ViewModel */,
+				3963EDB1269EFEA2005BC7DE /* Views */,
+				3963ED7C269EC1DF005BC7DE /* Assets.xcassets */,
+				3963ED81269EC1DF005BC7DE /* Info.plist */,
+				3963ED7E269EC1DF005BC7DE /* Preview Content */,
+			);
+			path = Deposits;
+			sourceTree = "<group>";
+		};
+		3963ED7E269EC1DF005BC7DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3963ED7F269EC1DF005BC7DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3963ED89269EC1E0005BC7DE /* DepositsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3963ED8A269EC1E0005BC7DE /* DepositsTests.swift */,
+				3963ED8C269EC1E0005BC7DE /* Info.plist */,
+			);
+			path = DepositsTests;
+			sourceTree = "<group>";
+		};
+		3963ED94269EC1E0005BC7DE /* DepositsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3963ED95269EC1E0005BC7DE /* DepositsUITests.swift */,
+				3963ED97269EC1E0005BC7DE /* Info.plist */,
+			);
+			path = DepositsUITests;
+			sourceTree = "<group>";
+		};
+		3963EDB1269EFEA2005BC7DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3963ED7A269EC1DE005BC7DE /* DepositsListView.swift */,
+				3963EDB7269F0D93005BC7DE /* DepositsListTile.swift */,
+				3963EDAD269EF5B5005BC7DE /* ScanChequeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3963EDB2269EFEBE005BC7DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3963EDA9269EC6CB005BC7DE /* DepositsListViewModel.swift */,
+				3963EDAF269EF7A1005BC7DE /* ScanChequeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3963EDB3269EFECF005BC7DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3963EDAB269EC90B005BC7DE /* DepositError.swift */,
+				3963EDA5269EC28A005BC7DE /* DepositModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3963EDB4269EFEDD005BC7DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3963EDA3269EC268005BC7DE /* DepositsService.swift */,
+				3963EDA7269EC5BE005BC7DE /* MockDepositList.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3963ED74269EC1DE005BC7DE /* Deposits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3963ED9A269EC1E0005BC7DE /* Build configuration list for PBXNativeTarget "Deposits" */;
+			buildPhases = (
+				3963ED71269EC1DE005BC7DE /* Sources */,
+				3963ED72269EC1DE005BC7DE /* Frameworks */,
+				3963ED73269EC1DE005BC7DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deposits;
+			productName = Deposits;
+			productReference = 3963ED75269EC1DE005BC7DE /* Deposits.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3963ED85269EC1E0005BC7DE /* DepositsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3963ED9D269EC1E0005BC7DE /* Build configuration list for PBXNativeTarget "DepositsTests" */;
+			buildPhases = (
+				3963ED82269EC1E0005BC7DE /* Sources */,
+				3963ED83269EC1E0005BC7DE /* Frameworks */,
+				3963ED84269EC1E0005BC7DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3963ED88269EC1E0005BC7DE /* PBXTargetDependency */,
+			);
+			name = DepositsTests;
+			productName = DepositsTests;
+			productReference = 3963ED86269EC1E0005BC7DE /* DepositsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3963ED90269EC1E0005BC7DE /* DepositsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3963EDA0269EC1E0005BC7DE /* Build configuration list for PBXNativeTarget "DepositsUITests" */;
+			buildPhases = (
+				3963ED8D269EC1E0005BC7DE /* Sources */,
+				3963ED8E269EC1E0005BC7DE /* Frameworks */,
+				3963ED8F269EC1E0005BC7DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3963ED93269EC1E0005BC7DE /* PBXTargetDependency */,
+			);
+			name = DepositsUITests;
+			productName = DepositsUITests;
+			productReference = 3963ED91269EC1E0005BC7DE /* DepositsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3963ED6D269EC1DE005BC7DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3963ED74269EC1DE005BC7DE = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					3963ED85269EC1E0005BC7DE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3963ED74269EC1DE005BC7DE;
+					};
+					3963ED90269EC1E0005BC7DE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3963ED74269EC1DE005BC7DE;
+					};
+				};
+			};
+			buildConfigurationList = 3963ED70269EC1DE005BC7DE /* Build configuration list for PBXProject "Deposits" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3963ED6C269EC1DE005BC7DE;
+			productRefGroup = 3963ED76269EC1DE005BC7DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3963ED74269EC1DE005BC7DE /* Deposits */,
+				3963ED85269EC1E0005BC7DE /* DepositsTests */,
+				3963ED90269EC1E0005BC7DE /* DepositsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3963ED73269EC1DE005BC7DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3963EDB6269F0D1C005BC7DE /* Screen Recording 2021-07-14 at 5.45.37 PM.mov in Resources */,
+				3963ED80269EC1DF005BC7DE /* Preview Assets.xcassets in Resources */,
+				3963ED7D269EC1DF005BC7DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3963ED84269EC1E0005BC7DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3963ED8F269EC1E0005BC7DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3963ED71269EC1DE005BC7DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3963EDA8269EC5BE005BC7DE /* MockDepositList.swift in Sources */,
+				3963ED7B269EC1DE005BC7DE /* DepositsListView.swift in Sources */,
+				3963EDAE269EF5B5005BC7DE /* ScanChequeView.swift in Sources */,
+				3963EDAC269EC90B005BC7DE /* DepositError.swift in Sources */,
+				3963ED79269EC1DE005BC7DE /* DepositsApp.swift in Sources */,
+				3963EDA6269EC28A005BC7DE /* DepositModel.swift in Sources */,
+				3963EDB8269F0D93005BC7DE /* DepositsListTile.swift in Sources */,
+				3963EDB0269EF7A1005BC7DE /* ScanChequeViewModel.swift in Sources */,
+				3963EDA4269EC268005BC7DE /* DepositsService.swift in Sources */,
+				3963EDAA269EC6CB005BC7DE /* DepositsListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3963ED82269EC1E0005BC7DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3963ED8B269EC1E0005BC7DE /* DepositsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3963ED8D269EC1E0005BC7DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3963ED96269EC1E0005BC7DE /* DepositsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3963ED88269EC1E0005BC7DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3963ED74269EC1DE005BC7DE /* Deposits */;
+			targetProxy = 3963ED87269EC1E0005BC7DE /* PBXContainerItemProxy */;
+		};
+		3963ED93269EC1E0005BC7DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3963ED74269EC1DE005BC7DE /* Deposits */;
+			targetProxy = 3963ED92269EC1E0005BC7DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3963ED98269EC1E0005BC7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3963ED99269EC1E0005BC7DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3963ED9B269EC1E0005BC7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Deposits/Preview Content\"";
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Deposits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bank.Deposits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3963ED9C269EC1E0005BC7DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Deposits/Preview Content\"";
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Deposits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bank.Deposits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3963ED9E269EC1E0005BC7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				INFOPLIST_FILE = DepositsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bank.DepositsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deposits.app/Deposits";
+			};
+			name = Debug;
+		};
+		3963ED9F269EC1E0005BC7DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				INFOPLIST_FILE = DepositsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bank.DepositsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deposits.app/Deposits";
+			};
+			name = Release;
+		};
+		3963EDA1269EC1E0005BC7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				INFOPLIST_FILE = DepositsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bank.DepositsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Deposits;
+			};
+			name = Debug;
+		};
+		3963EDA2269EC1E0005BC7DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				INFOPLIST_FILE = DepositsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bank.DepositsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Deposits;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3963ED70269EC1DE005BC7DE /* Build configuration list for PBXProject "Deposits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3963ED98269EC1E0005BC7DE /* Debug */,
+				3963ED99269EC1E0005BC7DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3963ED9A269EC1E0005BC7DE /* Build configuration list for PBXNativeTarget "Deposits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3963ED9B269EC1E0005BC7DE /* Debug */,
+				3963ED9C269EC1E0005BC7DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3963ED9D269EC1E0005BC7DE /* Build configuration list for PBXNativeTarget "DepositsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3963ED9E269EC1E0005BC7DE /* Debug */,
+				3963ED9F269EC1E0005BC7DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3963EDA0269EC1E0005BC7DE /* Build configuration list for PBXNativeTarget "DepositsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3963EDA1269EC1E0005BC7DE /* Debug */,
+				3963EDA2269EC1E0005BC7DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3963ED6D269EC1DE005BC7DE /* Project object */;
+}

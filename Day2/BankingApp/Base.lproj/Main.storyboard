@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iNw-gf-qJh">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Zelle-->
+        <scene sceneID="w8r-6t-1Ot">
+            <objects>
+                <viewController id="Xms-Ug-e33" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="24n-VI-Mes">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Hum-eG-6gu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="Zelle" image="dollarsign.circle" catalog="system" id="M48-1h-s4f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdC-KA-ICN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="347"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="NO8-0B-tBD">
+            <objects>
+                <viewController id="buk-ag-nZ1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gR0-Jw-fye">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="flW-0L-yAu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Account" image="house" catalog="system" id="hId-dT-C1j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c86-d4-qWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="347"/>
+        </scene>
+        <!--Transfer-->
+        <scene sceneID="HvK-8z-NkR">
+            <objects>
+                <viewController id="V0t-WS-rI9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9FE-a9-Qq8">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WHS-jE-Iji"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Transfer" image="arrowshape.bounce.forward" catalog="system" id="TPP-U3-GnU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5o-os-Fgi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="347"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="OoG-QH-fRb">
+            <objects>
+                <viewController id="3Uk-Yp-R1y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Es0-xH-ptH">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5wf-XD-foh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="4" title="Menu" image="list.dash" catalog="system" id="LtU-jL-Ekw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gna-Kb-JRR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="347"/>
+        </scene>
+        <!--Home Tab Bar Controller-->
+        <scene sceneID="DTu-Y0-LrV">
+            <objects>
+                <tabBarController id="iNw-gf-qJh" customClass="HomeTabBarController" customModule="BankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hI1-GW-7zX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Xms-Ug-e33" kind="relationship" relationship="viewControllers" id="cDC-dO-Wdp"/>
+                        <segue destination="VfM-xv-7UO" kind="relationship" relationship="viewControllers" id="Nsx-Bk-ilR"/>
+                        <segue destination="buk-ag-nZ1" kind="relationship" relationship="viewControllers" id="S4y-Q7-ldw"/>
+                        <segue destination="V0t-WS-rI9" kind="relationship" relationship="viewControllers" id="Uvq-3x-cJj"/>
+                        <segue destination="3Uk-Yp-R1y" kind="relationship" relationship="viewControllers" id="cbN-b1-v0u"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdf-Bb-Z6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1361" y="-595"/>
+        </scene>
+        <!--Deposits-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DespoitsViewController" id="BYZ-38-t0r" customClass="DespoitsViewController" customModule="BankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nxS-k9-2Hh">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DepositsListCell" rowHeight="82" id="9TD-nS-emr" customClass="DepositsListCell" customModule="BankingApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="49" width="388" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9TD-nS-emr" id="iey-aS-0jo">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="82"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-2Q-0nP">
+                                                    <rect key="frame" x="15.000000000000004" y="10" width="35.333333333333343" height="62"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FC-B3-leE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="35.333333333333336" height="36.333333333333336"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFg-r5-P31">
+                                                            <rect key="frame" x="0.0" y="46.333333333333336" width="35.333333333333336" height="15.666666666666664"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBN-PB-QXh">
+                                                    <rect key="frame" x="65.333333333333343" y="32" width="312.66666666666663" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EBN-PB-QXh" firstAttribute="leading" secondItem="PAa-2Q-0nP" secondAttribute="trailing" constant="15" id="4vs-85-Jow"/>
+                                                <constraint firstItem="PAa-2Q-0nP" firstAttribute="leading" secondItem="iey-aS-0jo" secondAttribute="leading" constant="15" id="GZx-gF-hk9"/>
+                                                <constraint firstItem="EBN-PB-QXh" firstAttribute="centerY" secondItem="iey-aS-0jo" secondAttribute="centerY" id="YB8-ie-uBw"/>
+                                                <constraint firstItem="PAa-2Q-0nP" firstAttribute="top" secondItem="iey-aS-0jo" secondAttribute="top" constant="10" id="pYz-hg-z5K"/>
+                                                <constraint firstAttribute="bottom" secondItem="PAa-2Q-0nP" secondAttribute="bottom" constant="10" id="xUB-38-glE"/>
+                                                <constraint firstItem="EBN-PB-QXh" firstAttribute="trailing" secondItem="iey-aS-0jo" secondAttribute="trailingMargin" constant="10" id="zDO-MN-Max"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amountLabel" destination="EBN-PB-QXh" id="4KB-uA-dyZ"/>
+                                            <outlet property="dateLabel" destination="0FC-B3-leE" id="Jp9-Yd-Fd8"/>
+                                            <outlet property="descriptionLabel" destination="hFg-r5-P31" id="1vw-Ju-Hl6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DepositListTotalCell" id="4eG-nL-pBG" customClass="DepositListTotalCell" customModule="BankingApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="131" width="388" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4eG-nL-pBG" id="2GF-7V-6Gq">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZb-1P-PHK">
+                                                    <rect key="frame" x="164.66666666666666" y="8.0000000000000018" width="58.666666666666657" height="27.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VZb-1P-PHK" firstAttribute="centerY" secondItem="2GF-7V-6Gq" secondAttribute="centerY" id="H1n-GJ-6JK"/>
+                                                <constraint firstItem="VZb-1P-PHK" firstAttribute="centerX" secondItem="2GF-7V-6Gq" secondAttribute="centerX" id="y58-F4-cft"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="totalDeposits" destination="VZb-1P-PHK" id="42l-WY-GIt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="N5X-cG-Uri">
+                                <rect key="frame" x="204" y="453" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nxS-k9-2Hh" secondAttribute="bottom" id="56u-dd-W8D"/>
+                            <constraint firstItem="N5X-cG-Uri" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GHk-C1-B9A"/>
+                            <constraint firstItem="nxS-k9-2Hh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XSj-GR-8oE"/>
+                            <constraint firstItem="N5X-cG-Uri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bF5-Hy-dKU"/>
+                            <constraint firstItem="nxS-k9-2Hh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="q3w-MJ-pZc"/>
+                            <constraint firstItem="nxS-k9-2Hh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rjA-Ip-cxE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Deposits" id="mD5-Bd-8tc">
+                        <barButtonItem key="rightBarButtonItem" title="Deposit" image="plus" catalog="system" id="5To-wY-i7E">
+                            <connections>
+                                <action selector="didTapAddDeposit:" destination="BYZ-38-t0r" id="S6r-kS-gY5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="depositsTableView" destination="nxS-k9-2Hh" id="ASA-ib-GZZ"/>
+                        <outlet property="spinner" destination="N5X-cG-Uri" id="AaF-g2-HQU"/>
+                        <segue destination="d9Q-18-OGc" kind="show" identifier="scanChequeVC" id="P5p-UC-Bvy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xTW-0K-L27">
+                    <rect key="frame" x="0.0" y="0.0" width="40.5" height="13.666666666666666"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </objects>
+            <point key="canvasLocation" x="724.63768115942037" y="-912.05357142857133"/>
+        </scene>
+        <!--Scan Cheque-->
+        <scene sceneID="D4t-As-iOf">
+            <objects>
+                <viewController id="d9Q-18-OGc" customClass="MakeDepositViewController" customModule="BankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cU-Ca-hG1">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sk-9T-zOb">
+                                <rect key="frame" x="20" y="155" width="388" height="300"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="cXg-sV-eSM"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NGx-bK-RO0">
+                                <rect key="frame" x="20" y="470" width="388" height="168"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="tqn-HQ-gIR">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="y0s-Pt-Vev"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-ZY-6qg">
+                                        <rect key="frame" x="0.0" y="70" width="388" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B6J-PG-3qw">
+                                        <rect key="frame" x="0.0" y="134" width="388" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JBF-93-utx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Sk-9T-zOb" firstAttribute="top" secondItem="JBF-93-utx" secondAttribute="top" constant="15" id="Kz2-1h-PQ3"/>
+                            <constraint firstItem="JBF-93-utx" firstAttribute="trailing" secondItem="NGx-bK-RO0" secondAttribute="trailing" constant="20" id="LTv-ZS-vpt"/>
+                            <constraint firstItem="NGx-bK-RO0" firstAttribute="leading" secondItem="JBF-93-utx" secondAttribute="leading" constant="20" id="hE3-Qa-JeW"/>
+                            <constraint firstItem="JBF-93-utx" firstAttribute="trailing" secondItem="8Sk-9T-zOb" secondAttribute="trailing" constant="20" id="hMT-6j-GdK"/>
+                            <constraint firstItem="8Sk-9T-zOb" firstAttribute="leading" secondItem="JBF-93-utx" secondAttribute="leading" constant="20" id="tqL-GD-uxT"/>
+                            <constraint firstItem="NGx-bK-RO0" firstAttribute="top" secondItem="8Sk-9T-zOb" secondAttribute="bottom" constant="15" id="xIM-fy-krR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scan Cheque" id="z2H-j3-TuP">
+                        <barButtonItem key="rightBarButtonItem" title="Deposit" id="bsO-hz-eA3">
+                            <connections>
+                                <action selector="didTapDeposit:" destination="d9Q-18-OGc" id="0oz-aP-Ncz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="amount" destination="kV9-ZY-6qg" id="SxG-wB-fle"/>
+                        <outlet property="chequeDescription" destination="B6J-PG-3qw" id="D0S-kr-voc"/>
+                        <outlet property="datePicker" destination="tqn-HQ-gIR" id="aMP-Vd-gJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAT-DE-ZBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.7663551401868" y="-912.31101511879058"/>
+        </scene>
+        <!--Deposits-->
+        <scene sceneID="sGb-yg-5kH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VfM-xv-7UO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Deposits" image="square.and.arrow.down.on.square" catalog="system" selectedImage="square.and.arrow.down.on.square" id="qId-mz-qEI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="0PK-fJ-zbM">
+                        <rect key="frame" x="0.0" y="44" width="428" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="93s-Sb-ZMb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsN-bG-pet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="-912"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.bounce.forward" catalog="system" width="128" height="86"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="square.and.arrow.down.on.square" catalog="system" width="122" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
